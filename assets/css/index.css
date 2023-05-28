@@ -28,7 +28,7 @@
  
  .logo-texto {
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 24px;
  }
 
  .logo-texto span {
@@ -75,6 +75,7 @@
     justify-content: center;
     color: #2A7AE4;
     cursor: pointer;
+    font-size: 14px;
  }
 
  .btn1:hover {
@@ -85,5 +86,43 @@
     margin-left: auto;
     max-width: 182px;
     flex: 1;
+ }
+
+ .banner-hero {
+    display: flex;
+    flex-direction: column;
+    height: 352px;
+    width: 100%;
+    padding: 32px 10%;
+    background: url('../imgs/banner.jpg') no-repeat center;
+    background-size: cover;
+    justify-content: flex-end;
+    gap: 16px;
+    color: #fff;
+ }
+
+ .hero-title {
+    font-size: 52px;
+    line-height: 61px;
+ }
+
+ .hero-subtitle {
+    font-size: 22px;
+    line-height: 26px;
+ }
+
+ .btn2 {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #2A7AE4;
+    cursor: pointer;
+    width: fit-content;
     font-size: 14px;
+    line-height: 19px;
+ }
+
+ .btn2:hover {
+    background-color: #5595E9;
  }
