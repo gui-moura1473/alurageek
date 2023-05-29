@@ -21,7 +21,6 @@
  .logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     cursor: pointer;
 
  }
@@ -121,8 +120,173 @@
     width: fit-content;
     font-size: 14px;
     line-height: 19px;
+    outline: none;
+    border: none;
  }
 
  .btn2:hover {
     background-color: #5595E9;
+ }
+
+ .container-principal {
+    padding: 64px 10%;
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+ }
+ 
+ .categoria-wrapper {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .categoria-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+ }
+
+ .categoria-header h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+ }
+
+ .categoria-header a {
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color:  #2A7AE4;
+ }
+
+ .categoria-header i {
+    color: #2A7AE4;
+    margin-left: 10px;
+ }
+
+ .categoria-cards {
+    padding-block: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 15.5%;
+    gap: 8px;
+ }
+ 
+ .card-image {
+    width: 100%;
+    cursor: pointer;
+ }
+
+ .card-wrapper h2 {
+    font-size: 14px;
+    font-weight: 400;
+ }
+
+ .card-wrapper span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #464646;
+ }
+
+ .card-wrapper a {
+    color: #2A7AE4;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+ }
+
+ .rodape {
+    padding: 64px 10%;
+    background-color: #EAF2FD;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+ }
+
+ .rodape .logo {
+    align-self: flex-start;
+ }
+
+ .rodape-navegacao {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .rodape-navegacao ul li {
+    list-style-type: none;
+    margin-bottom: 24px;
+ }
+
+ .rodape-navegacao ul li a {
+    text-decoration: none;
+    color: #464646;
+    font-size: 16px;
+ }
+
+ .rodape-contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+ }
+
+ .rodape-contato h3 {
+    font-size: 16px;
+ }
+
+ .input-wrapper2, .input-wrapper3 {
+    position: relative;
+    width: 100%;
+    display: flex;
+ }
+
+ .input-wrapper2 label {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 12px;
+    color: #A2A2A2;
+ }
+
+ .input-wrapper2 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 8px;
+    height: 56px;
+    padding: 28px 12px 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0px 1px 1px #C8C8C8;;
+ }
+
+ .input-wrapper3 label {
+    position: absolute;
+ }
+
+ .input-wrapper3 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 82px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0px 1px 1px #C8C8C8;
+    align-self: flex-start;
+ }
+
+ .creditos {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+ }
+
+ .creditos i {
+    margin-left: 10px;
  }
