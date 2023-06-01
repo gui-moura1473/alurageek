@@ -1,12 +1,6 @@
 import { produtos } from "../../data/produtos.js";
 
-console.log(produtos)
-
 const containerPrincipal = document.querySelector('.container-principal');
-
-const widthTela = window.innerWidth;
-
-
 
 const carregaCategoriaProdutos = () => {
     containerPrincipal.innerHTML = '';
@@ -71,5 +65,8 @@ const carregaCategoriaProdutos = () => {
     });
 }
 
-carregaCategoriaProdutos();
+if (containerPrincipal != null) {
+    carregaCategoriaProdutos();
+}
 window.addEventListener('resize', carregaCategoriaProdutos);
+

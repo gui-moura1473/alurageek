@@ -1,0 +1,134 @@
+.rodape {
+    padding: 64px 10%;
+    background-color: #EAF2FD;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+ }
+ 
+ .rodape .logo {
+    align-self: flex-start;
+ }
+ 
+ .rodape-navegacao {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .rodape-navegacao ul li {
+    list-style-type: none;
+    margin-bottom: 24px;
+ }
+ 
+ .rodape-navegacao ul li a {
+    text-decoration: none;
+    color: #464646;
+    font-size: 16px;
+ }
+ 
+ .rodape-contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+ }
+ 
+ .rodape-contato h3 {
+    font-size: 16px;
+ }
+ 
+ .input-wrapper2,
+ .input-wrapper3 {
+    position: relative;
+    width: 100%;
+    display: flex;
+ }
+ 
+ .input-wrapper2 label {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 12px;
+    color: #A2A2A2;
+ }
+ 
+ .input-wrapper2 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 8px;
+    height: 56px;
+    padding: 28px 12px 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0px 1px 1px #C8C8C8;
+    ;
+ }
+ 
+ .input-wrapper3 label {
+    position: absolute;
+ }
+ 
+ .input-wrapper3 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 82px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0px 1px 1px #C8C8C8;
+    align-self: flex-start;
+ }
+ 
+ .creditos {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+ }
+ 
+ .creditos i {
+    margin-left: 10px;
+ }
+
+ @media (max-width: 900px ) {
+    .rodape {
+        padding: 64px 5%;
+     }
+ }
+
+ @media (max-width: 540px) {
+    .rodape {
+        padding: 16px 5%;
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+  
+     .rodape .logo {
+        order: unset;
+        display: flex;
+        align-self: auto;
+        justify-content: center;
+        margin-top: 16px;
+     }
+  
+     .rodape .logotipo {
+        width: initial;
+        height: initial;
+     }
+  
+     .rodape .logo-texto {
+        margin-left: 5px;
+        font-size: 24px;
+     }
+  
+     .rodape-navegacao {
+        text-align: center;
+     }
+     
+     .rodape-contato {
+        width: 100%;
+     }
+ }

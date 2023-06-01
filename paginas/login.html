@@ -2,10 +2,10 @@
 <html lang="pt-br">
 
 <head>
-    <title>AluraGeek</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AluraGeek - Página de Login</title>
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -20,13 +20,13 @@
         rel="stylesheet">
 
     <!--Folha de estilos personalizada-->
+    <link href="..\assets\css\login.css" rel="stylesheet">
     <link href="..\assets\css\index.css" rel="stylesheet">
     <link href="..\assets\css\cabecalho.css" rel="stylesheet">
     <link href="..\assets\css\rodape.css" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
         <a href="/paginas/index.html" class="logo">
             <img src="../assets/imgs/logo.png" alt="Logotipo AluraGeek" class="logotipo">
@@ -38,19 +38,25 @@
             <input type="text" placeholder="O que deseja encontrar?" class="input-busca">
             <span class="search-icon"></span>
         </div>
-        <a href="/paginas/login.html" class="btn1" id="btn-login">Login</a>
     </header>
 
-    <div class="banner-hero">
-        <h1 class="hero-title">Dezembro Promocional</h1>
-        <h2 class="hero-subtitle">Produtos selecionados com 33% de desconto</h2>
-        <div class="btn2" id="btn-consoles">Ver consoles</div>
-    </div>
+    <main class="container-login">
 
-    <main class="container-principal">
-            
+        <form class="form-login">
+            <h2>Iniciar Sessão</h2>
+            <div class="input-wrapper-login">
+                <input type="email" placeholder="Escreva seu email" id="email" name="email">
+            </div>
+            <div class="input-wrapper-login">
+                <input type="password" placeholder="Escreva sua senha" id="senha" name="senha">
+            </div>
+            <button class="btn2" id="btn-entrar">Entrar</button>
+        </form>
+
     </main>
-    
+
+
+
     <footer class="rodape">
         <div class="logo">
             <img src="../assets/imgs/logo.png" alt="Logotipo AluraGeek" class="logotipo">
@@ -86,6 +92,7 @@
     </div>
 
     <script src="../assets/js/main.js" type="module"></script>
+
 </body>
 
 </html>
